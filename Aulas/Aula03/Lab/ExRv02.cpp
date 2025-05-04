@@ -3,8 +3,7 @@ using namespace std;
 
 int main()
 {
-	system("chcp 1252 > nul");
-	cout << "Que horas são? ";
+	cout << "Que horas sÃ£o? ";
 	int horas, minutos;
 	char pontos;
 	cin >> horas >> pontos >> minutos;
