@@ -3,13 +3,11 @@ using namespace std;
 
 int main()
 {
-	system("chcp 1252 > nul");
-	
 	 /**
 	 * E = METS X PESO X (Tempo de Atividade / 60)
-	 * Tempo de Atividade é em minutos
-	 * Ciclismo ou corrida tem pontuação METS = 7.0
-	 * Natação tem pontuação METS = 8.0
+	 * Tempo de Atividade Ã© em minutos
+	 * Ciclismo ou corrida tem pontuaÃ§Ã£o METS = 7.0
+	 * NataÃ§Ã£o tem pontuaÃ§Ã£o METS = 8.0
 	 */
 
 	cout << "Digite seu peso em quilos: ";
@@ -25,7 +23,7 @@ int main()
 	int horaCiclismo, minutoCiclismo;
 	cin >> horaCiclismo >> hora >> minutoCiclismo >> minuto;
 
-	cout << "Digite o tempo de natação: ";
+	cout << "Digite o tempo de nataÃ§Ã£o: ";
 	int horaNatacao, minutoNatacao;
 	cin >> horaNatacao >> hora >> minutoNatacao >> minuto;
 
@@ -34,7 +32,7 @@ int main()
 	float caloriasNatacao = 8.0f * peso * ((horaNatacao * 60 + minutoNatacao) / 60.0f);
 	float totalCalorias = caloriasCorrida + caloriasCiclismo + caloriasNatacao;
 
-	cout << "Você gastou um total de " << totalCalorias << " calorias." << endl;
+	cout << "VocÃª gastou um total de " << totalCalorias << " calorias." << endl;
 
 	return 0;
 }
