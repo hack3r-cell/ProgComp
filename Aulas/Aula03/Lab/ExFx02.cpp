@@ -3,8 +3,6 @@ using namespace std;
 
 int main()
 {
-	system("chcp 1252 > nul");
-	
 	cout << "Medida: ";
 	int medida;
 	cin >> medida;
