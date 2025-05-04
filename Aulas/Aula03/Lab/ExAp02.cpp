@@ -3,11 +3,9 @@ using namespace std;
 
 int main()
 {
-	system("chcp 1252 > nul");
-	
 	cout << "Tabuada de n" << endl;
 	cout << "------------" << endl;
-	cout << "Entre com um número n (0 a 9): ";
+	cout << "Entre com um nÃºmero n (0 a 9): ";
 	int numero;
 
 	cin >> numero;
