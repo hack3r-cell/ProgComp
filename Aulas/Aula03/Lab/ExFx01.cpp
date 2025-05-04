@@ -3,7 +3,6 @@ using namespace std;
 
 int main()
 {
-	system("chcp 1252 > nul");
 	int segundos, minutos;
 
 	cout << "Digite uma quantidade de minutos: ";
