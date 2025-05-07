@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-// protótipo das funções
+// protÃ³tipo das funÃ§Ãµes
 float calcularQuadrado(float);
 float calcularCubo(float);
 
@@ -12,6 +12,7 @@ int main(void)
 	cout << "Digite um valor: ";
 	float x;
 	cin >> x;
+	cout << endl;
 
 	float quadrado = calcularQuadrado(x);
 	cout << "Quadrado = " << quadrado << endl;
@@ -25,7 +26,7 @@ int main(void)
 	return 0;
 }
 
-// definição das funções
+// definiÃ§Ã£o das funÃ§Ãµes
 float calcularQuadrado(float x)
 {
 	return x * x;
