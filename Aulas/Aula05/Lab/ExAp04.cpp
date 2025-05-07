@@ -2,8 +2,8 @@
 #include <cmath>
 using namespace std;
 
-// protótipo da função
-float calcularModuloV(int, int);
+// protÃ³tipo da funÃ§Ã£o
+double calcularModuloV(double, double);
 
 int main(void)
 {
@@ -12,21 +12,21 @@ int main(void)
 	cout << "Digite as coordenadas do vetor:" << endl;
 
 	cout << "x: ";
-	int x;
+	double x;
 	cin >> x;
 
 	cout << "y: ";
-	int y;
+	double y;
 	cin >> y;
 
-	float vetor = calcularModuloV(x, y);
-	cout << "O tamanho do vetor é " << vetor << endl;
+	double vetor = calcularModuloV(x, y);
+	cout << "O tamanho do vetor Ã© " << vetor << endl;
 
 	return 0;
 }
 
-// definição da função
-float calcularModuloV(int x, int y)
+// definiÃ§Ã£o da funÃ§Ã£o
+float calcularModuloV(double x, double y)
 {
 	return sqrt(pow(x, 2) + pow(y, 2));
 }
