@@ -3,8 +3,8 @@
 #define PI 3.14159265
 using namespace std;
 
-// protótipo da função
-float calcularGraus(float, float);
+// protÃ³tipo da funÃ§Ã£o
+float calcularGraus(int, int);
 
 int main(void)
 {
@@ -13,21 +13,21 @@ int main(void)
 	cout << "Digite as coordenadas do vetor:" << endl;
 	
 	cout << "x: ";
-	float x;
+	int x;
 	cin >> x;
 
 	cout << "y: ";
-	float y;
+	int y;
 	cin >> y;
 
 	float anguloVetor = calcularGraus(x, y);
-	cout << "O ângulo do vetor é " << anguloVetor << " graus." << endl;
+	cout << "O Ã¢ngulo do vetor Ã© " << anguloVetor << " graus." << endl;
 
 	return 0;
 }
 
-// definição da função
-float calcularGraus(float x, float y)
+// definiÃ§Ã£o da funÃ§Ã£o
+float calcularGraus(int x, int y)
 {
 	return atan2(y, x) * 180 / PI;
 }
