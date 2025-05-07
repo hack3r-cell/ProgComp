@@ -4,7 +4,7 @@
 using namespace std;
 
 // protótipo da função
-float calcularGraus(int, int);
+double calcularGraus(double, double);
 
 int main(void)
 {
@@ -13,21 +13,21 @@ int main(void)
 	cout << "Digite as coordenadas do vetor:" << endl;
 	
 	cout << "x: ";
-	int x;
+	double x;
 	cin >> x;
 
 	cout << "y: ";
-	int y;
+	double y;
 	cin >> y;
 
-	float anguloVetor = calcularGraus(x, y);
+	double anguloVetor = calcularGraus(x, y);
 	cout << "O ângulo do vetor é " << anguloVetor << " graus." << endl;
 
 	return 0;
 }
 
 // definição da função
-float calcularGraus(int x, int y)
+double calcularGraus(double x, double y)
 {
 	return atan2(y, x) * 180 / PI;
 }
