@@ -5,8 +5,6 @@ char converteCodigo(int);
 
 int main(void)
 {
-	system("chcp 1252 > nul");
-
 	cout << converteCodigo(80);
 	cout << converteCodigo(114);
 	cout << converteCodigo(111);
