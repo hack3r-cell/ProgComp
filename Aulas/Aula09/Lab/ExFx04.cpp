@@ -15,7 +15,7 @@ int main(void)
 	float aposta2;
 	std::cin >> aposta2;
 
-	std::cout << "Entre com o valor do prêmio: ";
+	std::cout << "Entre com o valor do prÃªmio: ";
 	int premio;
 	std::cin >> premio;
 
@@ -24,5 +24,6 @@ int main(void)
 
 	int valorJogador2 = (premio / (aposta1 + aposta2)) * aposta2;
 	std::cout << "O jogador 2 tem direito a R$" << valorJogador2 << std::endl;
+	
 	return 0;
 }
