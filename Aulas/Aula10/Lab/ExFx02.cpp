@@ -2,20 +2,17 @@
 
 int main(void)
 {
-	constexpr int tamanho = 5;
-	
-	int vetorA[tamanho] = { 10, 20, 30, 40, 50 };
-	int vetorB[tamanho] = { 10, 20, 0, 0, 0 };
-	int vetorC[tamanho] = { 0, 0, 30, 0, 0};
+	system("chcp 1252 > nul");
+	float pesos[3] = { 2.00f, 3.00f, 4.00f };
 
-	std::cout << "Vetor A: " << vetorA[0] << " " << vetorA[1] << " " << vetorA[2] << " ";
-	std::cout << vetorA[3] << " " << vetorA[4] << std::endl;
+	std::cout << "Digite as suas notas: ";
+	float notas[3] = { 0.00f };
+	std::cin >> notas[0] >> notas[1] >> notas[2];
 
-	std::cout << "Vetor B: " << vetorB[0] << " " << vetorB[1] << " " << vetorB[2] << " ";
-	std::cout << vetorB[3] << " " << vetorB[4] << std::endl;
-
-	std::cout << "Vetor C: " << vetorC[0] << " " << vetorC[1] << " " << vetorC[2] << " ";
-	std::cout << vetorC[3] << " " << vetorC[4] << std::endl;
+	float media = (notas[0] * pesos[0] + notas[1] * pesos[1] + notas[2] * pesos[2]) / 9.00f;
+	std::cout.setf(std::ios_base::fixed, std::ios_base::floatfield);
+	std::cout.precision(2);
+	std::cout << "Sua média foi: " << media << std::endl;
 
 	return 0;
 }
