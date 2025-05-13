@@ -1,22 +1,21 @@
 #include <iostream>
 
-int somaVetor(int []);
+double funcao(double []);
 
 int main(void)
 {
 	system("chcp 1252 > nul");
-	constexpr int tamanho = 5;
 
-	std::cout << "Digite " << tamanho << " valores: ";
-	int vetor[tamanho] = { 0 };
-	std::cin >> vetor[0] >> vetor[1] >> vetor[2] >> vetor[3] >> vetor[4];
+	std::cout << "Digite os três valores para o vetor: ";
+	double vetor[3] = { 0.0 };
+	std::cin >> vetor[0] >> vetor[1] >> vetor[2];
 
-	std::cout << "A soma do vetor é " << somaVetor(vetor) << "." << std::endl;
+	std::cout << "Resultado: " << funcao(vetor) << std::endl;
 
 	return 0;
 }
 
-int somaVetor(int vetor[])
+double funcao(double vet[])
 {
-	return vetor[0] + vetor[1] + vetor[2] + vetor[3] + vetor[4];
+	return vet[0] * vet[2] - vet[1];
 }
