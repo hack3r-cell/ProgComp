@@ -6,7 +6,7 @@ int main(void)
 {
 	system("chcp 1252 > nul");
 
-	std::cout << "Digite os três valores para o vetor: ";
+	std::cout << "Digite os trÃªs valores para o vetor: ";
 	double vetor[3] = { 0.0 };
 	std::cin >> vetor[0] >> vetor[1] >> vetor[2];
 
