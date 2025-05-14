@@ -12,7 +12,7 @@ int main(void)
 	float media = (notas[0] * pesos[0] + notas[1] * pesos[1] + notas[2] * pesos[2]) / 9.00f;
 	std::cout.setf(std::ios_base::fixed, std::ios_base::floatfield);
 	std::cout.precision(2);
-	std::cout << "Sua média foi: " << media << std::endl;
+	std::cout << "Sua mÃ©dia foi: " << media << std::endl;
 
 	return 0;
 }
