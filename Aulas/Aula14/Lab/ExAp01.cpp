@@ -1,4 +1,6 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
+#include <cstring>
 
 struct Tigela
 {
@@ -21,11 +23,6 @@ int main(void)
 
 void Fome(Tigela * t)
 {
-	t->estado[0] = 'V';
-	t->estado[1] = 'a';
-	t->estado[2] = 'z';
-	t->estado[3] = 'i';
-	t->estado[4] = 'a';
-	t->estado[5] = '\0';
+	strcpy(t->estado, "Vazia");
 	return;
 }
