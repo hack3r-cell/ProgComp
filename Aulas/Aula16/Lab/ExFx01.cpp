@@ -1,21 +1,20 @@
 #include <iostream>
 
-constexpr int mes = 12;
-constexpr int tamanhoLetras = 10;
+constexpr int tamanho = 12;
 
 int main(void)
 {
 	system("chcp 1252 > nul");
 
-	const char meses[mes][tamanhoLetras] = {
-		"janeiro", "fevereiro", "março", "abril", "maio", "junho",
+	const char * meses[tamanho] = {
+		"janeiro", "fevereiro", "marÃ§o", "abril", "maio", "junho",
 		"julho", "agosto", "setembro", "outubro", "novembro", "dezembro"
 	};
-	int vendas[mes];
+	int vendas[tamanho];
 	int totalLivrosVendidos = 0;
 
-	std::cout << "Digite o número de livros vendidos:" << std::endl;
-	for (int i = 0; i < mes; i++)
+	std::cout << "Digite o nÃºmero de livros vendidos:" << std::endl;
+	for (int i = 0; i < tamanho; i++)
 	{
 		std::cout << meses[i] << ": ";
 		std::cin >> vendas[i];
