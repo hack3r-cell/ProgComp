@@ -2,13 +2,29 @@
 
 int main(void)
 {
-	int soma = 0;
+	system("chcp 1252 > nul");
 
-	for (int i = 3; i < 1000; i++)
-		if (i % 3 == 0 || i % 5 == 0)
-			soma += i;
+	int contador = 0;
+	int primos = 0;
+	int primo = 0;
 
-	std::cout << "Resultado: " << soma << std::endl;
+	for (int i = 1; primos < 1002; i++)
+	{
+		for (int j = 1; j <= i; j++)
+			if (i % j == 0)
+				contador++;
+		
+		if (contador == 2)
+		{
+			//std::cout << i << std::endl;
+			primo = i;
+			primos++;
+		}
+		contador = 0;
+	}
+
+
+	std::cout << "O 1001 número primo é " << primo << std::endl;
 
 	return 0;
 }
