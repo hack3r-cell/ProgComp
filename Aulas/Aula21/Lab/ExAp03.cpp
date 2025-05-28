@@ -8,7 +8,7 @@ int main(void)
 	int primos = 0;
 	int primo = 0;
 
-	for (int i = 1; primos < 1002; i++)
+	for (int i = 1; primos < 1001; i++)
 	{
 		for (int j = 1; j <= i; j++)
 			if (i % j == 0)
@@ -24,7 +24,7 @@ int main(void)
 	}
 
 
-	std::cout << "O 1001 número primo é " << primo << std::endl;
+	std::cout << "O 1001 nÃºmero primo Ã© " << primo << std::endl;
 
 	return 0;
 }
