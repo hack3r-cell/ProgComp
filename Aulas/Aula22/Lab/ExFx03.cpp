@@ -25,9 +25,9 @@ int main(void)
 	std::cin.ignore();
 
 	bop * funcionarios = new bop[tamanho]{
-		{ "JosÈ", "GarÁon", "Paquito", apelido },
+		{ "Jos√©", "Gar√ßon", "Paquito", apelido },
 		{ "Marcos", "Porteiro", "Soneca", cargo },
-		{ "Jo„o", "SeguranÁa", "Coxinha", cargo },
+		{ "Jo√£o", "Seguran√ßa", "Coxinha", cargo },
 		{ "Carlos", "Faxineiro", "Tuta", nome }
 	};
 
@@ -60,7 +60,7 @@ int main(void)
 				std::cout << std::endl;
 				break;
 			default:
-				std::cout << "OpÁ„o Inv·lida!" << std::endl;
+				std::cout << "Op√ß√£o Inv√°lida!" << std::endl;
 				std::cout << std::endl;
 		}
 		menu();
@@ -68,6 +68,8 @@ int main(void)
 		std::cin.ignore();
 	}
 
+	std::cout << "Tchau!" << std::endl;
+	
 	delete [] funcionarios;
 
 	return 0;
@@ -75,15 +77,15 @@ int main(void)
 
 void menu()
 {
-	std::cout << "Listagem de Funcio·rios" << std::endl;
+	std::cout << "Listagem de Funcio√°rios" << std::endl;
 	std::cout << std::endl;
 	std::cout << "\ta. Mostrar por nome" << std::endl;
 	std::cout << "\tb. Mostrar por cargo" << std::endl;
 	std::cout << "\tc. Mostrar por apelido" << std::endl;
-	std::cout << "\td. Mostrar por preferÍncia" << std::endl;
+	std::cout << "\td. Mostrar por prefer√™ncia" << std::endl;
 	std::cout << "\te. Sair" << std::endl;
 	std::cout << std::endl;
-	std::cout << "Digite sua opÁ„o: ";
+	std::cout << "Digite sua op√ß√£o: ";
 
 	return;
 }
