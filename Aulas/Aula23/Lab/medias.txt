@@ -1,0 +1,5 @@
+O aluno Wilson tem média: 6.3
+O aluno Silvio tem média: 5.5
+O aluno Luis tem média: 7.1
+O aluno Pedro tem média: 2.1
+O aluno Lucas tem média: 8.9
