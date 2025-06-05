@@ -44,7 +44,7 @@ int main(void)
 				cout.setf(ios_base::fixed, ios_base::floatfield);
 				cout.precision(1);
 				char buff[100];
-				snprintf(buff, 100, "O aluno %s tem média: %.1f\n", nome, media);
+				snprintf(buff, 100, "O aluno %s tem mÃ©dia: %.1f\n", nome, media);
 				strcpy(alunos[i++], buff);
 			}
 			fin >> nota;
@@ -55,6 +55,14 @@ int main(void)
 
 	ofstream fout;
 	fout.open("medias.txt");
+
+	if (!fout.is_open())
+	{
+		cout << "A abertura do arquivo " << arquivo << " falhou!" << endl;
+		cout << "Programa encerrando.\n";
+		exit(EXIT_FAILURE);
+	}
+	
 	for (int i = 0; i < 12; i++)
 		fout << alunos[i];
 
