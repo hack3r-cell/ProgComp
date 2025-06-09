@@ -24,15 +24,16 @@ int main(void)
 		exit(EXIT_FAILURE);
 	}
 
-	do
+	fin >> nome;
+	while(!fin.eof())
 	{
-		fin >> nome;
 		fin >> peso;
 		fin >> comp;
 		totalQuilos += peso;
-	} while (!fin.eof());
+		fin >> nome;
+	}
 
-	cout << "O total de gramas é: " << totalQuilos << endl;
+	cout << "O total de gramas Ã©: " << totalQuilos << endl;
 
 	fin.close();
 
